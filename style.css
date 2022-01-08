@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+p,
+li,
+a {
+  font-family: 'Poppins', sans-serif;
+}
+
+header .nav-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+.nav-section h2 a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-section ul {
+  list-style: none;
+}
+
+.nav-section li {
+  display: inline-block;
+}
+
+.nav-section li > a {
+  display: block;
+  padding: 7px 0;
+  margin: 0 10px;
+  color: #444;
+  text-decoration: underline transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-section li > a:hover {
+  text-decoration-color: currentColor;
+}
+
+.hero-section {
+  margin: 0 auto;
+  margin-top: 70px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 800px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.hero-section h2 {
+  padding-bottom: 20px;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+
+.hero-section h3 {
+  color: #444;
+}
+
+main {
+  margin-top: 70px;
+  font-family: 'Poppins', sans-serif;
+}
+
+main button {
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  min-width: 150px;
+  border: 2px solid currentColor;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+main .graph {
+  margin: 45px 0;
+  text-align: center;
+}
+
+main .graph.init {
+  display: none;
+}
+
+.graph .description {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.graph ul {
+  list-style: none;
+}
+
+.graph ul li {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid #000;
+  background-color: #cdcdcd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.graph ul li::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  height: 0;
+  width: 2px;
+  background-color: #000;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease-in-out;
+}
+
+.graph ul li.active::after {
+  height: 45px;
+}
+
+.graph.order .list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.graph.order li {
+  display: block;
+  max-width: 250px;
+  margin-bottom: 25px;
+}
+
+.graph.order li::after {
+  height: 20px;
+}
+
+.graph.order li::before {
+  content: '';
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 7px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+.graph ul li a {
+  color: #000;
+  text-decoration: underline transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.graph ul li a:hover {
+  text-decoration-color: currentColor;
+}
+
+.graph ul li.display {
+  display: none;
+}
+
+.graph .tooltip-content {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 5px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  display: none;
+  width: 100%;
+}
+
+.graph .tooltip-content::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 7px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+
+.graph .tooltip-content span {
+  font-size: 0.65rem;
+}
+
+.graph ul li:hover .tooltip-content {
+  display: block;
+}

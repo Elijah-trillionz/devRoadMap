@@ -1,0 +1,151 @@
+{
+  "what_to_learn": {
+    "webdev": {
+      "title": "There are different parts of a website, which would you like to be involved in",
+      "options": [
+        {
+          "title": "Design the structure of websites",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces",
+          "id": "front-end"
+        },
+        {
+          "id": "back-end",
+          "title": "Build servers, and communicate with database",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        },
+        {
+          "id": "full-stack",
+          "title": "Be involved in both",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        }
+      ],
+      "next": "learning_curve"
+    }
+  },
+  "learning_curve": {
+    "front-end": {
+      "title": "These are the languages and things you should study to be a Front-End developer",
+      "order": true,
+      "options": [
+        {
+          "id": "front-end",
+          "title": "Learn HTML",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        },
+        {
+          "id": "front-end",
+          "title": "Learn CSS",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        },
+        {
+          "id": "front-end",
+          "title": "Learn JavaScript",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        },
+        {
+          "id": "front-end",
+          "title": "Practice with Projects and Exercises",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        },
+        {
+          "id": "front-end",
+          "title": "Practice with Tutorials",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        },
+        {
+          "id": "front-end",
+          "title": "Learn a framework",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        }
+      ],
+      "next": "learning_resources"
+    },
+    "back-end": {
+      "title": "These are the languages and things you should study to be a Back-End developer",
+      "order": true,
+      "options": [
+        {
+          "id": "language",
+          "title": "A server language",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        },
+        {
+          "id": "database",
+          "title": "SQL/NoSQL",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        }
+      ]
+    },
+    "full-stack": {
+      "title": "These are the languages and things you should study to be a Front-End developer and Back-End developer",
+      "order": true,
+      "options": [
+        {
+          "id": "language",
+          "title": "A server language",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        },
+        {
+          "id": "database",
+          "title": "SQL/NoSQL",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+        }
+      ]
+    }
+  },
+  "learning_resources": {
+    "front-end": {
+      "title": "Here are free resources to learn and practice front-end web development",
+      "options": [
+        {
+          "id": "w3schools",
+          "link": "https://www.w3schools.com/html/default.asp",
+          "title": "W3Schools.com",
+          "more_info": "W3Schools is a tutorial site for learning web development"
+        },
+        {
+          "id": "freecodecamp",
+          "link": "https://freecodecamp.org",
+          "title": "FreeCodeCamp",
+          "more_info": "FreeCodeCamp is an NGO that provides programming courses for free"
+        },
+        {
+          "id": "cs50",
+          "link": "https://youtube.com/c/cs50",
+          "title": "CS50 HTML",
+          "more_info": "CS50 is a course in Harvard that provides classes for different programming languages"
+        },
+        {
+          "id": "codecademy",
+          "link": "https://codecademy.com",
+          "title": "CodeCademy",
+          "more_info": "Codecademy is an education centre that provides free courses for programming"
+        },
+        {
+          "id": "sololearn",
+          "link": "https://sololearn.com",
+          "title": "SoloLearn",
+          "more_info": "With SoloLearn you can easily learn and practice programming on your phone"
+        },
+        {
+          "id": "traversy-media",
+          "link": "https://youtube.com/c/traversy-media",
+          "title": "Traversy Media",
+          "more_info": "Practice your skills by building projects with Brad Traversy for free. You will also learn some frameworks in this channel"
+        },
+        {
+          "id": "design-course",
+          "link": "https://youtube.com/c/design-course",
+          "title": "Design Course",
+          "more_info": "Learn the concepts of designing a website, and build projects with Gary Simons"
+        },
+        {
+          "id": "youtube",
+          "link": "https://dev.to/",
+          "title": "More YouTube Resources",
+          "more_info": "Get more youtube resources, channels to develop your skills as a front-end developer"
+        }
+      ]
+    }
+  }
+}
