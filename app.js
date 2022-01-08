@@ -24,15 +24,9 @@ const fetchData = async (id) => {
 };
 
 const toggleFurtherDisplay = (e) => {
-  const graphElements = document.querySelectorAll('.graph');
-
-  e.target.parentElement.querySelectorAll('ul > li').forEach((option) => {
-    if (option.id !== e.target.id) {
-      // option.classList.toggle('display');
-    }
-  });
   e.target.classList.toggle('active');
   if (e.target.classList.contains('active')) {
+    // contains the parent and chosen id
     createGraphElements(
       devData.content[e.target.parentElement.parentElement.parentElement.id][
         e.target.id
