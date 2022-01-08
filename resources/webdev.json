@@ -65,14 +65,14 @@
       "order": true,
       "options": [
         {
-          "id": "language",
+          "id": "server-languages",
           "title": "A server language",
           "more_info": "Programming languages that are used to build servers e.g JavaScript, Python etc"
         },
         {
           "id": "database",
           "title": "SQL/NoSQL",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "more_info": "a database is where you store user's data in."
         }
       ],
       "next": "learning_resources"
@@ -82,16 +82,17 @@
       "order": true,
       "options": [
         {
-          "id": "language",
-          "title": "A server language",
+          "id": "front-end",
+          "title": "Front-End Languages",
           "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
         },
         {
-          "id": "database",
-          "title": "SQL/NoSQL",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "id": "server-languages",
+          "title": "Back-End Languages",
+          "more_info": "For building the unseen parts of a website or web app (server-side) i.e the server."
         }
-      ]
+      ],
+      "next": "learning_resources"
     }
   },
   "learning_resources": {
@@ -312,11 +313,9 @@
           "more_info": "See 10 other JavaScript frameworks"
         }
       ]
-    }
-  },
-  "back-end": {
-    "language": {
-      "title": "You only need one server language to be a back-end developer\n\nHere are some of the best options in the industry today",
+    },
+    "server-languages": {
+      "title": "You only need one server language to be a back-end developer.\nHere are some of the best options in the industry today",
       "options": [
         {
           "id": "node",
@@ -353,6 +352,23 @@
           "link": "https://www.geeksforgeeks.org/java/",
           "title": "Java",
           "more_info": "The primary advantage of using Java is that it works on the Write Once Run Anywhere principle. So if you already know Java, it can be useful here too"
+        }
+      ]
+    },
+    "database": {
+      "title": "Here are the options of database",
+      "options": [
+        {
+          "title": "MongoDB",
+          "id": "mongodb",
+          "more_info": "MongoDB is a NoSQL database management system that works well with popular server languages like JavaScript and Python",
+          "link": "https://www.mongodb.com/"
+        },
+        {
+          "title": "MySQL",
+          "id": "mysql",
+          "more_info": "MySQL is relational database management system. It uses SQL",
+          "link": "https://www.mysql.com/"
         }
       ]
     }

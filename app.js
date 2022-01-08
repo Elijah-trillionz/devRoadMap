@@ -24,6 +24,17 @@ const fetchData = async (id) => {
 };
 
 const toggleFurtherDisplay = (e) => {
+  e.target.parentElement.querySelectorAll('ul > li').forEach((option) => {
+    // other options shouldn't disappear when in order
+    if (
+      option.id !== e.target.id &&
+      !e.target.parentElement.parentElement.parentElement.classList.contains(
+        'order'
+      )
+    ) {
+      option.classList.toggle('display');
+    }
+  });
   e.target.classList.toggle('active');
   if (e.target.classList.contains('active')) {
     // contains the parent and chosen id

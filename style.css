@@ -177,6 +177,7 @@ main .graph.init {
   border-radius: 4px;
   display: none;
   width: 100%;
+  min-width: 300px;
 }
 
 .graph .tooltip-content::after {
