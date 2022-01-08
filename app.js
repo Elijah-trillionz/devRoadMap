@@ -1,11 +1,12 @@
 const main = document.querySelector('main > div');
 const getStartedBtn = document.getElementById('init-command');
 const initGraphElement = document.querySelector('.graph');
+const initOptions = document.querySelectorAll('.graph ul > li');
 
 const devData = {};
 const fetchData = async (id) => {
   try {
-    const res = await fetch(`./resources${id}.json`, {
+    const res = await fetch(`./resources/${id}.json`, {
       method: 'get',
     });
 
@@ -27,14 +28,15 @@ const toggleFurtherDisplay = (e) => {
 
   e.target.parentElement.querySelectorAll('ul > li').forEach((option) => {
     if (option.id !== e.target.id) {
-      option.classList.toggle('display');
+      // option.classList.toggle('display');
     }
   });
   e.target.classList.toggle('active');
   if (e.target.classList.contains('active')) {
-    generateNextOptions(
-      e.target.id,
-      graphElements[graphElements.length - 1].id
+    createGraphElements(
+      devData.content[e.target.parentElement.parentElement.parentElement.id][
+        e.target.id
+      ]
     );
     moveToBottom();
   } else {
@@ -42,37 +44,10 @@ const toggleFurtherDisplay = (e) => {
   }
 };
 
-const generateNextOptions = (chosenOption, parent) => {
-  createGraphElements(devData.content[parent][chosenOption]);
-  triggerEvent();
-};
-
 const removeNextOptions = () => {
   const graphElements = document.querySelectorAll('.graph');
   graphElements[graphElements.length - 1].remove();
 };
-
-const triggerEvent = () => {
-  const graphElements = document.querySelectorAll('.graph');
-  const options =
-    graphElements[graphElements.length - 1].querySelectorAll('ul > li');
-
-  // alert! only clicking any of the first four hard-coded options (gamedev, webdev, etc) will trigger fetching the json
-  if (graphElements.length <= 1) {
-    options.forEach((option) => {
-      option.addEventListener('click', async (e) => {
-        await fetchData(e.target.id);
-        toggleFurtherDisplay(e);
-      });
-    });
-  } else {
-    options.forEach((option) => {
-      option.addEventListener('click', toggleFurtherDisplay);
-    });
-  }
-};
-
-triggerEvent();
 
 const createGraphElements = (data) => {
   if (data) {
@@ -100,6 +75,7 @@ const createGraphElements = (data) => {
               </div>
     `;
       } else {
+        optionElement.addEventListener('click', triggerListener);
         optionElement.innerHTML = `
         ${option.title}
         <div class="tooltip-content">
@@ -135,4 +111,15 @@ const moveToBottom = () => {
 getStartedBtn.addEventListener('click', (e) => {
   initGraphElement.style.display = 'block';
   e.target.style.display = 'none';
+});
+
+const triggerListener = (e) => {
+  toggleFurtherDisplay(e);
+};
+
+initOptions.forEach((option) => {
+  option.addEventListener('click', async (e) => {
+    await fetchData(e.target.id);
+    toggleFurtherDisplay(e);
+  });
 });

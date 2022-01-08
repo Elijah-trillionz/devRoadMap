@@ -5,18 +5,18 @@
       "options": [
         {
           "title": "Design the structure of websites",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces",
+          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces. It is called Front-end web development",
           "id": "front-end"
         },
         {
           "id": "back-end",
           "title": "Build servers, and communicate with database",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "more_info": "For building the unseen parts of a website or web app (server-side) i.e the server. It involves logic, analysing and handling data, technical construction of websites. It is called Back-end web development"
         },
         {
           "id": "full-stack",
           "title": "Be involved in both",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "more_info": "Involved in both front-end and back-end web development. It is called full-stack web development"
         }
       ],
       "next": "learning_curve"
@@ -30,32 +30,32 @@
         {
           "id": "front-end",
           "title": "Learn HTML",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "more_info": "HTML is used to display texts, images, buttons, forms, audios, videos to the clients (visitors of the website)"
         },
         {
           "id": "front-end",
           "title": "Learn CSS",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "more_info": "CSS style the contents on a website and make them look organized and beautiful, very beautiful, like adding a color to texts"
         },
         {
           "id": "front-end",
           "title": "Learn JavaScript",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "more_info": "Interactions, behaviors, etc of web pages are made with JavaScript in the web."
         },
         {
-          "id": "front-end",
-          "title": "Practice with Projects and Exercises",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "id": "exercises",
+          "title": "Practice with Exercises",
+          "more_info": "The best way to master web development is to practice"
         },
         {
-          "id": "front-end",
-          "title": "Practice with Tutorials",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "id": "projects",
+          "title": "Build Projects",
+          "more_info": "Build projects with what you've learnt from HTML, CSS, and JavaScript"
         },
         {
-          "id": "front-end",
-          "title": "Learn a framework",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "id": "frameworks",
+          "title": "Learn a framework/library",
+          "more_info": "A framework/library is what makes building a web application faster and easier"
         }
       ],
       "next": "learning_resources"
@@ -67,14 +67,15 @@
         {
           "id": "language",
           "title": "A server language",
-          "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
+          "more_info": "Programming languages that are used to build servers e.g JavaScript, Python etc"
         },
         {
           "id": "database",
           "title": "SQL/NoSQL",
           "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
         }
-      ]
+      ],
+      "next": "learning_resources"
     },
     "full-stack": {
       "title": "These are the languages and things you should study to be a Front-End developer and Back-End developer",
@@ -95,7 +96,7 @@
   },
   "learning_resources": {
     "front-end": {
-      "title": "Here are free resources to learn and practice front-end web development",
+      "title": "Here are free resources to learn front-end web development languages (HTML, CSS, JavaScript)",
       "options": [
         {
           "id": "w3schools",
@@ -107,7 +108,7 @@
           "id": "freecodecamp",
           "link": "https://freecodecamp.org",
           "title": "FreeCodeCamp",
-          "more_info": "FreeCodeCamp is an NGO that provides programming courses for free"
+          "more_info": "FreeCodeCamp is an Non-Profit that provides programming courses for free"
         },
         {
           "id": "cs50",
@@ -144,6 +145,214 @@
           "link": "https://dev.to/",
           "title": "More YouTube Resources",
           "more_info": "Get more youtube resources, channels to develop your skills as a front-end developer"
+        }
+      ]
+    },
+    "exercises": {
+      "title": "Here are free useful resources to learn and practice your skills in front-end in all levels",
+      "options": [
+        {
+          "id": "exercism",
+          "link": "https://exercism.org",
+          "title": "Exercism",
+          "more_info": "It is a non-profit tool where you solve coding exercises and get mentored to gain true fluency in your chosen language."
+        },
+        {
+          "id": "hackerrank",
+          "link": "https://hackerrank.com",
+          "title": "HackerRank",
+          "more_info": "It's a platform that literally prepares you with coding exercises for job hiring"
+        },
+        {
+          "id": "leetcode",
+          "link": "https://leetcode.com",
+          "title": "LeetCode",
+          "more_info": "LeetCode organizes contests with tasks and prizes sponsored by big companies (who are of course keeping a tab"
+        },
+        {
+          "id": "alphabet",
+          "link": "https://t.co/npd8RPbtC8",
+          "title": "AlphaBet",
+          "more_info": "They have lots of tasks for beginners, intermediate and advanced developers"
+        },
+        {
+          "id": "codewars",
+          "link": "https://codewars.com",
+          "title": "CodeWars",
+          "more_info": "It is a community of developers, where you solve coding exercises (called Kata) based on your level in coding"
+        },
+        {
+          "id": "coderbyte",
+          "link": "https://coderbyte.com",
+          "title": "CoderByte",
+          "more_info": "A great platform that helps you prepare for coding interviews by challenging yourself with coding exercises"
+        },
+        {
+          "id": "w3resource",
+          "link": "https://w3resource.com",
+          "title": "W3Resource",
+          "more_info": "It is a website to get tons of exercises without having to sign up, pay, get tracked, or any of that"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Here are free useful Project Ideas and resources for more projects",
+      "options": [
+        {
+          "id": "clone-a-website",
+          "link": "https://www.geeksforgeeks.org/top-10-front-end-web-development-projects-for-beginners/",
+          "title": "Clone a Website",
+          "more_info": "Building a website clone is an excellent method to learn the fundamentals of page structure, colors, fonts, media, tables, and other design elements"
+        },
+        {
+          "id": "music-player",
+          "link": "https://www.geeksforgeeks.org/top-10-front-end-web-development-projects-for-beginners/",
+          "title": "Music Player",
+          "more_info": "For Front-End Web Development, creating a JavaScript Music Player can be a feasible choice"
+        },
+        {
+          "id": "calculator",
+          "link": "https://www.geeksforgeeks.org/top-10-front-end-web-development-projects-for-beginners/",
+          "title": "Build a Calculator",
+          "more_info": "A Calculator project with basic arithmetic operations functionalities like addition, subtraction, multiplication, and division will be highly useful to a novice who has the essential knowledge of HTML, CSS, and JavaScript."
+        },
+        {
+          "id": "RandomQuotes",
+          "link": "https://youtu.be/LdzcRuMnlvs",
+          "title": "Random Quotes",
+          "more_info": "This project will enhance your JavaScript skills"
+        },
+        {
+          "id": "Form Validator",
+          "link": "https://github.com/bradtraversy/vanillawebprojects/tree/master/form-validator",
+          "title": "Form Validator",
+          "more_info": "Simple client side form validation. Check required, length, email and password match"
+        },
+        {
+          "id": "lyrics",
+          "link": "https://github.com/bradtraversy/vanillawebprojects/tree/master/lyrics-search",
+          "title": "Lyrics Search App",
+          "more_info": "Find songs, artists and lyrics using the lyrics.ovh API"
+        },
+        {
+          "id": "Weather-app",
+          "link": "https://w3resource.com",
+          "title": "Weather App",
+          "more_info": "A weather application can be created with HTML, CSS, and JS. You may use the Open Weather Map API to add weather information."
+        },
+        {
+          "id": "DOM Array Methods",
+          "link": "https://github.com/bradtraversy/vanillawebprojects/tree/master/dom-array-methods",
+          "title": "DOM Array Methods",
+          "more_info": "Project to teach high order array methods and DOM manipulation. (Essentials in JavaScript)"
+        },
+        {
+          "id": "quiz app",
+          "link": "https://www.geeksforgeeks.org/top-10-front-end-web-development-projects-for-beginners/",
+          "title": "Quiz App",
+          "more_info": "Building a little quiz game is a great place to start. You’ll have to deal with highly abstract logic, and it’ll be up to you to control and/or expand the range of quiz difficulty"
+        },
+        {
+          "id": "more resources",
+          "link": "https://github.com/bradtraversy/vanillawebprojects",
+          "title": "Vanilla Web Projects",
+          "more_info": "These projects (20) are put together by the legendary Brad Traversy for you to master your web skills"
+        },
+        {
+          "id": "more resources",
+          "link": "https://github.com/bradtraversy/vanillawebprojects",
+          "title": "JavaScript Mini Projects",
+          "more_info": "Here are 15 mini projects for you to practice your JavaScript"
+        }
+      ]
+    },
+    "frameworks": {
+      "title": "Learning a framework/library should only come after you have mastered HTML, CSS, and JavaScript to a good extent.\nSo here are framework/library you should look out for",
+      "options": [
+        {
+          "id": "react",
+          "link": "https://www.react.org",
+          "title": "ReactJS",
+          "more_info": "React is a popular JavaScript library that is used to build user interfaces and single-page applications"
+        },
+        {
+          "id": "tailwind",
+          "link": "https://tailwindcss.com/",
+          "title": "Tailwind CSS",
+          "more_info": "TailwindCSS is a utility-first CSS framework used for easily styling your web pages"
+        },
+        {
+          "id": "vuejs",
+          "link": "https://vuejs.org/",
+          "title": "VueJS",
+          "more_info": "Vue is a progressive framework for building user interfaces. It is mostly used by developers in place of ReactJS"
+        },
+        {
+          "id": "Three.js",
+          "link": "https://threejs.org/",
+          "title": "Three.js",
+          "more_info": "Three.js is a cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser using WebGL."
+        },
+        {
+          "id": "resource",
+          "link": "https://blog.guvi.in/best-front-end-javascript-frameworks/",
+          "title": "Libraries/frameworks",
+          "more_info": "Useful resource on libraries/frameworks"
+        },
+        {
+          "id": "libraries",
+          "link": "https://www.freecodecamp.org/news/10-javascript-libraries-you-should-try/",
+          "title": "More JavaScript Libraries",
+          "more_info": "See 10 other JavaScript libraries"
+        },
+        {
+          "id": "frameworks",
+          "link": "https://hackr.io/blog/best-javascript-frameworks",
+          "title": "More JavaScript Frameworks",
+          "more_info": "See 10 other JavaScript frameworks"
+        }
+      ]
+    }
+  },
+  "back-end": {
+    "language": {
+      "title": "You only need one server language to be a back-end developer\n\nHere are some of the best options in the industry today",
+      "options": [
+        {
+          "id": "node",
+          "link": "https://www.nodejs.org",
+          "title": "NodeJS",
+          "more_info": "NodeJS is a JavaScript run-time environment for building servers. If you already know JavaScript, I recommend going for this option"
+        },
+        {
+          "id": "python",
+          "link": "https://www.python.org",
+          "title": "Python",
+          "more_info": "Python is a programming language. With tools like Flask, Django, you can build a server in Python easily"
+        },
+        {
+          "id": "php",
+          "link": "https://www.php.net/",
+          "title": "PHP",
+          "more_info": "PHP is a server-side scripting language made for building servers."
+        },
+        {
+          "id": "ruby",
+          "link": "https://www.geeksforgeeks.org/ruby-programming-language/",
+          "title": "Ruby",
+          "more_info": "Ruby is a general-purpose, interpreted programming language that supports various programming paradigms such as procedural, functional, and object-oriented programming"
+        },
+        {
+          "id": "rust",
+          "link": "https://blog.back4app.com/backend-languages/#7_Rust",
+          "title": "Rust",
+          "more_info": "Rust is a multi-paradigm scripting language that guarantees memory safety by validating references. It is syntatically similar to C++"
+        },
+        {
+          "id": "java",
+          "link": "https://www.geeksforgeeks.org/java/",
+          "title": "Java",
+          "more_info": "The primary advantage of using Java is that it works on the Write Once Run Anywhere principle. So if you already know Java, it can be useful here too"
         }
       ]
     }
