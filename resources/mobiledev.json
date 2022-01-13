@@ -1,5 +1,199 @@
 {
-  "what_to_learn": {},
-  "learning_curve": {},
-  "learning_resources": {}
+  "what_to_learn": {
+    "mobiledev": {
+      "title": "Before we reommend a language for you, we would love to ask.\nThere are two major operating systems (iOS, and Android), which would you love to build apps on?",
+      "options": [
+        {
+          "id": "android",
+          "title": "Android",
+          "more_info": "Android OS is owned and maintained by Google. It is the operating system that powers Samsung, Infinix, Gionee, Pixel, Tecno, etc"
+        },
+        {
+          "id": "ios",
+          "title": "iOS",
+          "more_info": "iOS is owned and maintained by Apple. It is the operating system that powers Iphones, Ipads, Apple watch"
+        },
+        {
+          "id": "both",
+          "title": "Both",
+          "more_info": "You can develop both Android and iOS apps, no restrictions from any of the corporations at all"
+        }
+      ],
+      "next": "step2"
+    }
+  },
+  "step2": {
+    "android": {
+      "title": "Here are the two programming languages that powers native apps on Android devices. \nYou only need one to build a fully functional app",
+      "options": [
+        {
+          "id": "java",
+          "title": "Java",
+          "more_info": "provide more info"
+        },
+        {
+          "id": "kotlin",
+          "title": "Kotlin",
+          "more_info": "provide more info"
+        }
+      ],
+      "next": "step3"
+    },
+    "ios": {
+      "title": "Here are the two programming languages that powers native apps on iOS devices. \nYou only need one to build a fully functional app",
+      "options": [
+        {
+          "id": "swift",
+          "title": "Swift",
+          "more_info": "provide more info"
+        },
+        {
+          "id": "objective-c",
+          "title": "Objective-C",
+          "more_info": "provide more info"
+        }
+      ],
+      "next": "step3"
+    },
+    "both": {
+      "title": "How would you like to develop apps in both iOS and Android?",
+      "options": [
+        {
+          "id": "cross-platform",
+          "title": "Learn one language and use in both platforms",
+          "more_info": "Rather than learning different languages for iOS and Android, you can learn one and use in both platforms. Such languages are called cross-platform languages"
+        },
+        {
+          "id": "individual",
+          "title": "Learn different languages for the different platforms",
+          "more_info": "As the Swift/Objective-C language is to iOS, so is the Kotlin/Java language is to Android. You can learn two different languages for the two different platforms"
+        }
+      ],
+      "next": "step3"
+    }
+  },
+  "step3": {
+    "java": {
+      "title": "Here are useful resources to learn Java for free",
+      "options": [
+        {
+          "id": "null",
+          "title": "null",
+          "link": "https://null.com",
+          "more_info": "null"
+        }
+      ]
+    },
+    "kotlin": {
+      "title": "Here are useful resources to learn Kotlin for free",
+      "options": [
+        {
+          "id": "null",
+          "title": "null",
+          "link": "https://null.com",
+          "more_info": "null"
+        }
+      ]
+    },
+    "swift": {
+      "title": "Here are useful resources to learn Swift for free",
+      "options": [
+        {
+          "id": "null",
+          "title": "null",
+          "link": "https://null.com",
+          "more_info": "null"
+        }
+      ]
+    },
+    "objective-c": {
+      "title": "Here are useful resources to learn Objective-C for free",
+      "options": [
+        {
+          "id": "null",
+          "title": "null",
+          "link": "https://null.com",
+          "more_info": "null"
+        }
+      ]
+    },
+    "cross-platform": {
+      "title": "Which of these languages are you familiar with",
+      "options": [
+        {
+          "id": "javascript",
+          "title": "JavaScript",
+          "more_info": "JavaScript is a scripting language used for building web apps, desktop apps, and mobile apps"
+        },
+        {
+          "id": "dart",
+          "title": "Dart",
+          "more_info": "Dart is a programming language designed for client development, such as for the web and mobile apps. It was built by Google"
+        },
+        {
+          "id": "none",
+          "title": "None",
+          "more_info": "I am not familiar with JavaScript nor Dart"
+        }
+      ],
+      "next": "step4"
+    },
+    "individual": {
+      "title": "Simply select an operating system to see the language you should learn.\nFeel free to bounce back here to navigate to the other OS",
+      "options": [
+        {
+          "id": "android",
+          "title": "Android",
+          "more_info": "Android OS is owned and maintained by Google. It is the operating system that powers Samsung, Infinix, Gionee, Pixel, Tecno, etc"
+        },
+        {
+          "id": "ios",
+          "title": "iOS",
+          "more_info": "iOS is owned and maintained by Apple. It is the operating system that powers Iphones, Ipads, Apple watch"
+        }
+      ],
+      "next": "step2"
+    }
+  },
+  "step4": {
+    "javascript": {
+      "title": "With React Native & ReactJS (a JavaScript library) you can build a mobile apps for both iOS and Android\nBelow is the roadmap to take in learning React Native",
+      "order": true,
+      "options": [
+        {
+          "id": "css",
+          "title": "Learn CSS",
+          "more_info": "CSS is a stylesheet for styling web pages. With a basic knowledge of CSS you can style applications using React Native"
+        },
+        {
+          "id": "javascript",
+          "title": "Learn JavaScript",
+          "more_info": "Everything in React Native will involve JavaScript. So it is expedient you learn and know enough JavaScript before moving to React Native"
+        },
+        {
+          "id": "react",
+          "title": "Learn ReactJS",
+          "more_info": "ReactJS is a JavaScript library for building web apps. React Native uses ReactJS to build mobile apps. Learn React, understand the concepts, practice with it; and get set for the next"
+        },
+        {
+          "id": "react-native",
+          "title": "Learn React Native",
+          "more_info": "Getting started with React Native after going through this order would be a lot easier and faster. You'd barely need a day"
+        }
+      ],
+      "next": "step5"
+    },
+    "dart": {
+      "title": "With Flutter (a Dart framework) you can build mobile apps for both iOS and Android\nBelow is the roadmap to take in learning Flutter",
+      "order": true,
+      "options": [
+        {
+          "id": "dart",
+          "title": "Learn Dart",
+          "more_info": "Dart is a programming language designed for client development, such as for the web and mobile apps. It was built by Google"
+        }
+      ],
+      "next": "step5"
+    }
+  }
 }

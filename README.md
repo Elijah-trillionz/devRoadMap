@@ -101,3 +101,10 @@ This is possible because we told the "primary" object to redirect to "ask_funny_
 I hope this is clear.
 
 This is how it works generally.
+
+### TODO: where resources are needed
+
+1. provide more info describing the Java and Kotlin language in relative to Android
+2. provide more info describing the Swift and Objective-c language in relative to Android
+3. Provide resources for learning Java, Kotlin, Swift, and Objective-C for free
+4. provide more info describing how to learn flutter and resources for learning it
