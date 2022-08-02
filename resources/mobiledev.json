@@ -79,7 +79,7 @@
         {
           "id": "null",
           "title": "null",
-          "link": "https://null.com",
+          "link": "https://devroadmap.vercel.app",
           "more_info": "null"
         }
       ]
@@ -90,7 +90,7 @@
         {
           "id": "null",
           "title": "null",
-          "link": "https://null.com",
+          "link": "https://devroadmap.vercel.app",
           "more_info": "null"
         }
       ]
@@ -101,7 +101,7 @@
         {
           "id": "null",
           "title": "null",
-          "link": "https://null.com",
+          "link": "https://devroadmap.vercel.app",
           "more_info": "null"
         }
       ]
@@ -112,7 +112,7 @@
         {
           "id": "null",
           "title": "null",
-          "link": "https://null.com",
+          "link": "https://devroadmap.vercel.app",
           "more_info": "null"
         }
       ]
@@ -157,7 +157,7 @@
   },
   "step4": {
     "javascript": {
-      "title": "With React Native & ReactJS (a JavaScript library) you can build a mobile apps for both iOS and Android\nBelow is the roadmap to take in learning React Native",
+      "title": "With React Native & ReactJS (a JavaScript library) you can build mobile apps for both iOS and Android\nBelow is the roadmap to take in learning React Native",
       "order": true,
       "options": [
         {
@@ -195,5 +195,8 @@
       ],
       "next": "step5"
     }
+  },
+  "step5": {
+    "CSS": {}
   }
 }

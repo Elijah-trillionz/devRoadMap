@@ -75,7 +75,7 @@
           "more_info": "a database is where you store user's data in."
         }
       ],
-      "next": "more_learning_curve"
+      "next": "learning_resources"
     },
     "full-stack": {
       "title": "These are the languages and things you should study to be a Front-End developer and Back-End developer",
@@ -369,6 +369,12 @@
           "id": "mysql",
           "more_info": "MySQL is relational database management system. It uses SQL",
           "link": "https://www.mysql.com/"
+        },
+        {
+          "title": "NativeJSONDB",
+          "id": "nativejsondb",
+          "more_info": "NativeJSONDB is a NOSQL database that stores data in JSON format. It is a good choice for storing data in a serverless environment. Still in development",
+          "link": "https://twitter.com/json_db"
         }
       ]
     }
