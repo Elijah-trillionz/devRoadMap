@@ -65,6 +65,19 @@ header .nav-section {
   color: #444;
 }
 
+.mobile-only {
+  padding-top: 10px;
+  display: block;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
 main {
   margin-top: 70px;
   font-family: 'Poppins', sans-serif;
