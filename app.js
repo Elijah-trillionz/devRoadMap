@@ -32,7 +32,7 @@ const toggleFurtherDisplay = (e) => {
         'order'
       )
     ) {
-      option.classList.toggle('display');
+      option.classList.toggle('disable');
     }
   });
   e.target.classList.toggle('active');
@@ -69,12 +69,14 @@ const createGraphElements = (data) => {
 
     // create options
     const listElement = document.createElement('ul');
-    data.options.forEach((option) => {
+    data.options.forEach((option, index) => {
       const optionElement = document.createElement('li');
       optionElement.id = option.id;
       if (option.link) {
         optionElement.innerHTML = `
-              <a href=${option.link}>${option.title}</a>
+              <a href=${option.link}>${data.order ? `${index + 1}👉` : ''} ${
+          option.title
+        }</a>
               <div class="tooltip-content">
                 <span>${option.more_info}</span>
               </div>
@@ -82,7 +84,7 @@ const createGraphElements = (data) => {
       } else {
         optionElement.addEventListener('click', triggerListener);
         optionElement.innerHTML = `
-        ${option.title}
+        ${data.order ? `${index + 1}👉` : ''} ${option.title}  
         <div class="tooltip-content">
           <span>${option.more_info}</span>
         </div>

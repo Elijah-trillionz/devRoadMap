@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@700&display=swap');
 
+:root {
+  ---active-color: red;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -112,7 +116,7 @@ main .graph.init {
   list-style: none;
 }
 
-.graph ul li {
+.graph li {
   position: relative;
   display: inline-block;
   padding: 5px 10px;
@@ -125,7 +129,7 @@ main .graph.init {
   user-select: none;
 }
 
-.graph ul li::after {
+.graph li::after {
   content: '';
   position: absolute;
   top: 100%;
@@ -137,8 +141,13 @@ main .graph.init {
   transition: 0.3s ease-in-out;
 }
 
-.graph ul li.active::after {
+.graph li.active::after {
   height: 45px;
+  background-color: var(---active-color);
+}
+
+.graph li.active {
+  border-color: var(---active-color);
 }
 
 .graph.order .list-container {
@@ -147,38 +156,72 @@ main .graph.init {
 }
 
 .graph.order li {
-  display: block;
+  display: inline-block;
   max-width: 250px;
-  margin-bottom: 25px;
+  margin-right: 20px;
 }
 
 .graph.order li::after {
-  height: 20px;
+  content: '';
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 20px;
 }
 
-.graph.order li::before {
-  content: '';
-  position: absolute;
-  top: calc(100% + 20px);
+.graph.order li.active::after {
   left: 50%;
   transform: translateX(-50%);
-  border-width: 7px;
-  border-style: solid;
-  border-color: #000 transparent transparent transparent;
+  top: 100%;
+  content: '';
+  width: 2px;
+  height: 45px;
 }
 
-.graph ul li a {
+.graph.order li::before,
+.graph li.active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 20px);
+  transform: translateY(-50%);
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent transparent #000;
+}
+
+.graph li.active::before {
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% + 45px);
+  border-color: var(---active-color) transparent transparent transparent;
+}
+
+.graph.order li:last-child::after,
+.graph.order li:last-child::before {
+  display: none;
+}
+
+.graph.order li.active:last-child::after,
+.graph.order li.active:last-child::before {
+  display: block;
+}
+
+.graph li a {
   color: #000;
   text-decoration: underline transparent;
   transition: 0.3s ease-in-out;
 }
 
-.graph ul li a:hover {
+.graph li a:hover {
   text-decoration-color: currentColor;
 }
 
-.graph ul li.display {
-  display: none;
+.graph li.disable {
+  border-color: #656565;
+  background-color: #656565;
+  pointer-events: none;
 }
 
 .graph .tooltip-content {

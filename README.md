@@ -108,3 +108,29 @@ This is how it works generally.
 2. provide more info describing the Swift and Objective-c language in relative to Android
 3. Provide resources for learning Java, Kotlin, Swift, and Objective-C for free
 4. provide more info describing how to learn flutter and resources for learning it
+
+CSS COURSES:
+
+1. https://www.freecodecamp.org/learn/responsive-web-design/#basic-css
+2. https://www.w3schools.com/css/default.asp => W3Schools CSS Tutorial
+3. https://youtu.be/1Rs2ND1ryYc => CSS Video Tutorial - Zero to Hero
+4. https://youtu.be/yfoY53QXEnI => CSS Crash Course
+5. https://www.udemy.com/course/modern-html-css-from-the-beginning/ => Paid Udemy Course (ult)
+6. https://codewithmosh.com/p/the-ultimate-html-css => Ultimate HTML & CSS course - from zero to hero
+7. https://css-for-js.dev/ => CSS for JavaScript Developers
+8. https://www.udemy.com/course/the-complete-web-development-bootcamp/ => Ultimate Web Development Bootcamp (ult)
+9. https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/ => CSS Complete Guide
+10. https://www.udemy.com/course/the-web-developer-bootcamp/ => Web Developer Bootcamp
+11. https://www.sololearn.com/learning/1023 => Sololearn CSS Course
+12. https://www.codecademy.com/catalog/language/html-css => Codecademy HTML & CSS Courses (ult)
+
+HTML
+
+1.
+2. https://www.w3schools.com/html/default.asp => W3Schools HTML Tutorial
+3. https://www.sololearn.com/learning/1014 => Sololearn HTML Course
+4. https://youtu.be/UB1O30fR-EE => HTML Crash Course
+5. https://www.udemy.com/course/modern-html-css-from-the-beginning/ => Paid Udemy Course (ult)
+
+6. https://www.udemy.com/course/the-complete-web-development-bootcamp/ => Ultimate Web Development Bootcamp (ult)
+7. https://www.codecademy.com/catalog/language/html-css => Codecademy HTML & CSS Courses (ult)
