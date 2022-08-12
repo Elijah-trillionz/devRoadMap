@@ -50,7 +50,6 @@ const removeNextOptions = () => {
 };
 
 const createGraphElements = (data) => {
-  console.log(data);
   if (data) {
     const graphElement = document.createElement('div');
     graphElement.classList.add('graph');
