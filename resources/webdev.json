@@ -19,12 +19,12 @@
           "more_info": "Involved in both front-end and back-end web development. It is called full-stack web development"
         }
       ],
-      "next": "learning_curve"
+      "next": "step2:learning_curve"
     }
   },
-  "learning_curve": {
+  "step2:learning_curve": {
     "front-end": {
-      "title": "These are the languages and things you should study to be a Front-End developer",
+      "title": "These are the languages and things you should study to be a Front-End web developer",
       "order": true,
       "options": [
         {
@@ -58,7 +58,7 @@
           "more_info": "A framework/library is what makes building a web application faster and easier"
         }
       ],
-      "next": "learning_resources"
+      "next": "step3:learning_resources"
     },
     "back-end": {
       "title": "These are the languages and things you should study to be a Back-End developer",
@@ -75,7 +75,7 @@
           "more_info": "a database is where you store user's data in."
         }
       ],
-      "next": "learning_resources"
+      "next": "step3:learning_resources"
     },
     "full-stack": {
       "title": "These are the languages and things you should study to be a Front-End developer and Back-End developer",
@@ -87,15 +87,15 @@
           "more_info": "Design and structure the beautiful (visible) layouts of the website. For building cool User Interfaces"
         },
         {
-          "id": "server-languages",
+          "id": "back-end",
           "title": "Back-End Languages",
           "more_info": "For building the unseen parts of a website or web app (server-side) i.e the server."
         }
       ],
-      "next": "learning_resources"
+      "next": "step2:learning_curve"
     }
   },
-  "learning_resources": {
+  "step3:learning_resources": {
     "front-end": {
       "title": "Here are free resources to learn front-end web development languages (HTML, CSS, JavaScript)",
       "options": [
@@ -272,7 +272,6 @@
       "options": [
         {
           "id": "react",
-          "link": "https://www.react.org",
           "title": "ReactJS",
           "more_info": "React is a popular JavaScript library that is used to build user interfaces and single-page applications"
         },
@@ -312,7 +311,8 @@
           "title": "More JavaScript Frameworks",
           "more_info": "See 10 other JavaScript frameworks"
         }
-      ]
+      ],
+      "next": "step4:react_learning_resources"
     },
     "server-languages": {
       "title": "You only need one server language to be a back-end developer.\nHere are some of the best options in the industry today",
@@ -375,6 +375,91 @@
           "id": "nativejsondb",
           "more_info": "NativeJSONDB is a NOSQL database that stores data in JSON format. It is a good choice for storing data in a serverless environment. Still in development",
           "link": "https://twitter.com/json_db"
+        }
+      ]
+    }
+  },
+  "step4:react_learning_resources": {
+    "react": {
+      "title": "Resources to learn ReactJS with bonus guide on how to learn it",
+      "options": [
+        {
+          "id": "official-doc",
+          "link": "https://react.org",
+          "title": "Official doc",
+          "more_info": "The React documentation is a straight to the point documentation to learn React"
+        },
+        {
+          "id": "react-crash-course",
+          "link": "https://react.org",
+          "title": "React Crash Course",
+          "more_info": "A crash course will introduce you to how React works through projects, as you code along with the tutorial"
+        },
+        {
+          "id": "react-crash-course",
+          "link": "https://youtu.be/w7ejDZ8SWv8",
+          "title": "React Crash Course",
+          "more_info": "A crash course will introduce you to how React works through projects, as you code along with the tutorial"
+        },
+        {
+          "id": "react-by-codecademy",
+          "link": "https://www.codecademy.com/learn/react-101",
+          "title": "React 101 by CodeCademy",
+          "more_info": "React 101 is a free course by Codecademy. Codecademy provides an interactive way to learn React by learning and doing"
+        },
+        {
+          "id": "react-by-freecodecamp",
+          "link": "https://www.freecodecamp.org/learn/front-end-development-libraries/#react",
+          "title": "React by FreeCodeCamp",
+          "more_info": "FreeCodeCamp offers an interactive platform to learn React for free"
+        },
+        {
+          "id": "how-to-learn",
+          "title": "Bonus: How I learned React",
+          "more_info": "If you don't know how to make use of those resources to learn React, here is how I did which was very effective for me"
+        }
+      ],
+      "next": "step6:using-react-resources"
+    }
+  },
+  "step6:using-react-resources": {
+    "how-to-learn": {
+      "title": "This is how I used the React resources to learn React, with an article explaining everything",
+      "order": true,
+      "options": [
+        {
+          "id": "crash-course",
+          "title": "Code along a tutorial",
+          "link": "https://youtu.be/w7ejDZ8SWv8",
+          "more_info": "Step 1 is to code along with a tutorial/crash course that will introduced you to React by creating a React project"
+        },
+        {
+          "id": "study-docs",
+          "title": "Study the docs",
+          "link": "https://react.org",
+          "more_info": "Step 2 is to study the react docs, try out as many examples on the documentation. If you don't fully grasp the docs, try out step 3"
+        },
+        {
+          "id": "take-a-course",
+          "title": "Take a React course (optional)",
+          "more_info": "This step solidifies your understanding of React, I recommend taking this step if the react docs is not clear enough"
+        },
+        {
+          "id": "create-projects",
+          "title": "Create more projects",
+          "link": "https://www.fastcomet.com/blog/what-can-i-build-with-react-js",
+          "more_info": "Now is the time to create more projects. Try creating 4 to 5 different React projects"
+        },
+        {
+          "id": "bonus",
+          "title": "Bonus: Learn in public",
+          "more_info": "Learning in public is like marketing yourself to a dev community. As such you may find companies interested in hiring you"
+        },
+        {
+          "id": "in-article",
+          "title": "All of these in an article",
+          "link": "https://dev.to/elijahtrillionz/you-dont-need-to-learn-reactjs-now-2an",
+          "more_info": "This article provides useful information on learning React"
         }
       ]
     }

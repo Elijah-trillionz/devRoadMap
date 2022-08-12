@@ -19,10 +19,10 @@
           "more_info": "You can develop both Android and iOS apps, no restrictions from any of the corporations at all"
         }
       ],
-      "next": "step2"
+      "next": "step2:learning_curve"
     }
   },
-  "step2": {
+  "step2:learning_curve": {
     "android": {
       "title": "Here are the two programming languages that powers native apps on Android devices. \nYou only need one to build a fully functional app",
       "options": [
@@ -37,7 +37,7 @@
           "more_info": "provide more info"
         }
       ],
-      "next": "step3"
+      "next": "step3:learning_resources"
     },
     "ios": {
       "title": "Here are the two programming languages that powers native apps on iOS devices. \nYou only need one to build a fully functional app",
@@ -53,7 +53,7 @@
           "more_info": "provide more info"
         }
       ],
-      "next": "step3"
+      "next": "step3:learning_resources"
     },
     "both": {
       "title": "How would you like to develop apps in both iOS and Android?",
@@ -69,10 +69,10 @@
           "more_info": "As the Swift/Objective-C language is to iOS, so is the Kotlin/Java language is to Android. You can learn two different languages for the two different platforms"
         }
       ],
-      "next": "step3"
+      "next": "step3:learning_resources"
     }
   },
-  "step3": {
+  "step3:learning_resources": {
     "java": {
       "title": "Here are useful resources to learn Java for free",
       "options": [
@@ -136,7 +136,7 @@
           "more_info": "I am not familiar with JavaScript nor Dart"
         }
       ],
-      "next": "step4"
+      "next": "step4:cross_platform_learning_curve"
     },
     "individual": {
       "title": "Simply select an operating system to see the language you should learn.\nFeel free to bounce back here to navigate to the other OS",
@@ -152,21 +152,21 @@
           "more_info": "iOS is owned and maintained by Apple. It is the operating system that powers Iphones, Ipads, Apple watch"
         }
       ],
-      "next": "step2"
+      "next": "step2:learning_curve"
     }
   },
-  "step4": {
+  "step4:cross_platform_learning_curve": {
     "javascript": {
       "title": "With React Native & ReactJS (a JavaScript library) you can build mobile apps for both iOS and Android\nBelow is the roadmap to take in learning React Native",
       "order": true,
       "options": [
         {
-          "id": "css",
+          "id": "front-end",
           "title": "Learn CSS",
           "more_info": "CSS is a stylesheet for styling web pages. With a basic knowledge of CSS you can style applications using React Native"
         },
         {
-          "id": "javascript",
+          "id": "front-end",
           "title": "Learn JavaScript",
           "more_info": "Everything in React Native will involve JavaScript. So it is expedient you learn and know enough JavaScript before moving to React Native"
         },
@@ -181,7 +181,7 @@
           "more_info": "Getting started with React Native after going through this order would be a lot easier and faster. You'd barely need a day"
         }
       ],
-      "next": "step5"
+      "next": "step5:cross_platform_learning_resources"
     },
     "dart": {
       "title": "With Flutter (a Dart framework) you can build mobile apps for both iOS and Android\nBelow is the roadmap to take in learning Flutter",
@@ -193,10 +193,145 @@
           "more_info": "Dart is a programming language designed for client development, such as for the web and mobile apps. It was built by Google"
         }
       ],
-      "next": "step5"
+      "next": "step5:cross_platform_learning_resources"
     }
   },
-  "step5": {
-    "CSS": {}
+  "step5:cross_platform_learning_resources": {
+    "front-end": {
+      "title": "Here are free resources to learn CSS and JavaScript",
+      "options": [
+        {
+          "id": "w3schools",
+          "link": "https://www.w3schools.com/html/default.asp",
+          "title": "W3Schools.com",
+          "more_info": "W3Schools is a tutorial site for learning web development"
+        },
+        {
+          "id": "freecodecamp",
+          "link": "https://freecodecamp.org",
+          "title": "FreeCodeCamp",
+          "more_info": "FreeCodeCamp is an Non-Profit that provides programming courses for free"
+        },
+        {
+          "id": "cs50",
+          "link": "https://youtube.com/c/cs50",
+          "title": "CS50 HTML",
+          "more_info": "CS50 is a course in Harvard that provides classes for different programming languages"
+        },
+        {
+          "id": "codecademy",
+          "link": "https://codecademy.com",
+          "title": "CodeCademy",
+          "more_info": "Codecademy is an education centre that provides free courses for programming"
+        },
+        {
+          "id": "sololearn",
+          "link": "https://sololearn.com",
+          "title": "SoloLearn",
+          "more_info": "With SoloLearn you can easily learn and practice programming on your phone"
+        },
+        {
+          "id": "traversy-media",
+          "link": "https://youtube.com/c/traversy-media",
+          "title": "Traversy Media",
+          "more_info": "Practice your skills by building projects with Brad Traversy for free. You will also learn some frameworks in this channel"
+        },
+        {
+          "id": "design-course",
+          "link": "https://youtube.com/c/design-course",
+          "title": "Design Course",
+          "more_info": "Learn the concepts of designing a website, and build projects with Gary Simons"
+        },
+        {
+          "id": "youtube",
+          "link": "https://dev.to/elijahtrillionz/10-youtube-channels-for-learning-web-development-459a",
+          "title": "More YouTube Resources",
+          "more_info": "Get more youtube resources, channels to develop your skills as a front-end developer"
+        }
+      ]
+    },
+    "react": {
+      "title": "Resources to learn ReactJS with bonus guide on how to learn it",
+      "options": [
+        {
+          "id": "official-doc",
+          "link": "https://react.org",
+          "title": "Official doc",
+          "more_info": "The React documentation is a straight to the point documentation to learn React"
+        },
+        {
+          "id": "react-crash-course",
+          "link": "https://react.org",
+          "title": "React Crash Course",
+          "more_info": "A crash course will introduce you to how React works through projects, as you code along with the tutorial"
+        },
+        {
+          "id": "react-crash-course",
+          "link": "https://youtu.be/w7ejDZ8SWv8",
+          "title": "React Crash Course",
+          "more_info": "A crash course will introduce you to how React works through projects, as you code along with the tutorial"
+        },
+        {
+          "id": "react-by-codecademy",
+          "link": "https://www.codecademy.com/learn/react-101",
+          "title": "React 101 by CodeCademy",
+          "more_info": "React 101 is a free course by Codecademy. Codecademy provides an interactive way to learn React by learning and doing"
+        },
+        {
+          "id": "react-by-freecodecamp",
+          "link": "https://www.freecodecamp.org/learn/front-end-development-libraries/#react",
+          "title": "React by FreeCodeCamp",
+          "more_info": "FreeCodeCamp offers an interactive platform to learn React for free"
+        },
+        {
+          "id": "how-to-learn",
+          "title": "Bonus: How I learned React",
+          "more_info": "If you don't know how to make use of those resources to learn React, here is how I did which was very effective for me"
+        }
+      ],
+      "next": "step6:using-react-resources"
+    }
+  },
+  "step6:using-react-resources": {
+    "how-to-learn": {
+      "title": "This is how I used the React resources to learn React, with an article explaining everything",
+      "order": true,
+      "options": [
+        {
+          "id": "crash-course",
+          "title": "Code along a tutorial",
+          "link": "https://youtu.be/w7ejDZ8SWv8",
+          "more_info": "Step 1 is to code along with a tutorial/crash course that will introduced you to React by creating a React project"
+        },
+        {
+          "id": "study-docs",
+          "title": "Study the docs",
+          "link": "https://react.org",
+          "more_info": "Step 2 is to study the react docs, try out as many examples on the documentation. If you don't fully grasp the docs, try out step 3"
+        },
+        {
+          "id": "take-a-course",
+          "title": "Take a React course (optional)",
+          "more_info": "This step solidifies your understanding of React, I recommend taking this step if the react docs is not clear enough"
+        },
+        {
+          "id": "create-projects",
+          "title": "Create more projects",
+          "link": "https://www.fastcomet.com/blog/what-can-i-build-with-react-js",
+          "more_info": "Now is the time to create more projects. Try creating 4 to 5 different React projects"
+        },
+        {
+          "id": "bonus",
+          "title": "Bonus: Learn in public",
+          "more_info": "Learning in public is like marketing yourself to a dev community. As such you may find companies interested in hiring you"
+        },
+        {
+          "id": "in-article",
+          "title": "All of these in an article",
+          "link": "https://dev.to/elijahtrillionz/you-dont-need-to-learn-reactjs-now-2an",
+          "more_info": "This article provides useful information on learning React"
+        }
+      ]
+    }
   }
 }

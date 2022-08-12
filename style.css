@@ -85,6 +85,7 @@ header .nav-section {
 main {
   margin-top: 70px;
   font-family: 'Poppins', sans-serif;
+  height: 100%;
 }
 
 main button {
@@ -255,4 +256,22 @@ main .graph.init {
 
 .graph ul li:hover .tooltip-content {
   display: block;
+}
+
+.about h2 {
+  margin-bottom: 10px;
+}
+
+.about p {
+  margin: 8px;
+}
+
+.about a {
+  color: rgb(83, 129, 255);
+  text-decoration: underline transparent;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+.about a:hover {
+  text-decoration-color: currentColor;
 }

@@ -26,12 +26,7 @@ const fetchData = async (id) => {
 const toggleFurtherDisplay = (e) => {
   e.target.parentElement.querySelectorAll('ul > li').forEach((option) => {
     // other options shouldn't disappear when in order
-    if (
-      option.id !== e.target.id &&
-      !e.target.parentElement.parentElement.parentElement.classList.contains(
-        'order'
-      )
-    ) {
+    if (option.id !== e.target.id) {
       option.classList.toggle('disable');
     }
   });
@@ -55,6 +50,7 @@ const removeNextOptions = () => {
 };
 
 const createGraphElements = (data) => {
+  console.log(data);
   if (data) {
     const graphElement = document.createElement('div');
     graphElement.classList.add('graph');
