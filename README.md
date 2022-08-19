@@ -17,6 +17,7 @@ The way it works is simple, but initially complicated. It works like a link list
 It is designed thus:
 
 primary object
+```
 |
 |_ title
 |_ options: array of
@@ -25,6 +26,7 @@ primary object
     |_ more_info
     |_ link (optional): only if option is a link
 |_ next
+```
 
 The id of the options array in previous primary object is used as an identifier for a secondary object in the next primary object. Confusing?
 
