@@ -8,7 +8,7 @@ There are few rules:
 
 2. No other rules.
 
-Your contribution is only needed in the resources folder which contains json files of gamedev, webdev, desktopdev, and mobiledev.
+Your contribution is only needed in the resources folder which contains json files of webdev, and mobiledev.
 
 Each of them contains the roadmap of what to learn (ordered), and where to learn them, you can ask questions to get user's interest.
 
@@ -20,72 +20,56 @@ primary object
 |
 |_ title
 |_ options: array of
-|_ id
-|_ title
-|_ more_info
+    |_ id
+    |_ title
+    |_ more_info
+    |_ link (optional): only if option is a link
 |_ next
 
 The id of the options array in previous primary object is used as an identifier for a secondary object in the next primary object. Confusing?
 
-Let's see it in something you're familiar with
+For example
 
 ```js
-const obj = {
-  primary: {
-    title: "Learn a programming language",
-    options: [
+const jsonObj = {
+  "primary": {
+    "title": "Learn a programming language",
+    "options": [
       {
-        id: "python",
-        title: "Learn Python",
-        more_info: "Python is a very popular language, so learn it" // a tooltip that explains the option
+        "id": "python",
+        "title": "Learn Python", // what displays as the option
+        "more_info": "Python is a very popular language, so learn it" // a tooltip that explains the option
       },
       {
-        id: "JavaScript",
-        title: "Learn JavaScript",
-        more_info: "JavaScript is for the web, so learn it" // recommending languages shouldn't be like this; just an example
+        "id": "JavaScript",
+        "title": "Learn JavaScript",
+        "more_info": "JavaScript is for the web, so learn it" // recommending languages shouldn't be like this; just an example
       }
     ],
-    next: "ask_funny_question"
+    "next": "step2:resources" // specify steps to track
   },
-  ask_funny_questions: { // primary object
-    python: { // a secondary object
-      title: "Are you sure you wanna learn python?",
-      options: [
+  "step2:resources": {
+    "javascript": {
+      "title": "Resources to learn JavaScript",
+      "order": true, // displays the options below in order, with the first being step 1, and next step 2...
+      "options": [
         {
-          id: "python_yes",
-          title: "Yes",
-          more_info: "Click if you wanna learn python"
+          "id": "freecodecamp",
+          "title": "FreeCodeCamp JavaScript Course",
+          "link": "https://freecodecamp.org",
+          "more_info": "More information about the course"
         },
         {
-          id: "python_no",
-          title: "No",
-          more_info: "Click if you don't wanna learn python"
+          "id": "codecademy",
+          "title": "Codecademy Intermediate Course",
+          "link": "https://codecademy.org",
+          "more_info": "More information about the course"
         }
-      ],
-      next: "learning_resources"
+      ]
     },
-    javascript: {
-      // some title and options
-    }
-  },
-  learning_resources: {
-    python_yes: {
-      title: "Here are free resources to learn Python",
-      options: [
-        {
-          id: "w3schools",
-          title: "W3Schools",
-          link: "https://w3schools.com", // rather than leading to the next primary object; it opens this url
-          more_info: "Click if you wanna learn python"
-        },
-        {
-          id: "freecodecamp",
-          title: "FreeCodeCamp",
-          link: "https://freecodecamp.org"
-          more_info: "Click if you don't wanna learn python"
-        }
-      ],
-      next: "more_resources" // if all options above is a link, this can be ignored
+    "python": {
+      "title": "Resources to learn Python"
+      // ... repeat the same structure above
     }
   }
 }
@@ -94,13 +78,11 @@ const obj = {
 ### Explanation
 
 What this shows is that, initially a paragraph of "Learn a programming language" and options as a list will come up (python, JavaScript).
-When "Python" is clicked for example, a paragraph of "Are you sure you wanna learn Python" with a list of yes and no will pop up.
+When "JavaScript" is clicked for example, a list of ordered options (with links) of "FreeCodeCamp JavaScript Course" and "Codecademy Intermediate Course" will pop up.
 
-This is possible because we told the "primary" object to redirect to "ask_funny_questions" object. And this "ask_funny_questions" has turned the options of "primary" object into an object with a key of their id (when in option).
+This is possible because we told the "primary" object to redirect to "step2:resources" object. And this "step2:resources" has turned the options of "primary" object into an object with a key of their id (when in option).
 
 I hope this is clear.
-
-This is how it works generally.
 
 ### TODO: where resources are needed
 
