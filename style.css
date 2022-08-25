@@ -126,7 +126,7 @@ main .graph.init {
   border-radius: 5px;
   font-size: 0.9rem;
   cursor: pointer;
-  margin: 5px;
+  margin: 10px 5px;
   user-select: none;
 }
 
@@ -274,4 +274,10 @@ main .graph.init {
 
 .about a:hover {
   text-decoration-color: currentColor;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
 }

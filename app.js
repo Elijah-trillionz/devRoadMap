@@ -69,9 +69,9 @@ const createGraphElements = (data) => {
       optionElement.id = option.id;
       if (option.link) {
         optionElement.innerHTML = `
-              <a href=${option.link}>${data.order ? `${index + 1}👉` : ''} ${
-          option.title
-        }</a>
+              <a href=${option.link} target="_blank">${
+          data.order ? `${index + 1}👉` : ''
+        } ${option.title}</a>
               <div class="tooltip-content">
                 <span>${option.more_info}</span>
               </div>
