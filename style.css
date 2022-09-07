@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@700&display=swap');
 
 :root {
-  ---active-color: red;
+  ---primary-color: #444;
+  ---secondary-color: #000;
+  ---button-color: #cdcdcd;
 }
 
 * {
@@ -9,6 +11,10 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+a {
+  color: #000;
 }
 
 p,
@@ -25,7 +31,6 @@ header .nav-section {
 
 .nav-section h2 a {
   text-decoration: none;
-  color: #000;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -41,7 +46,7 @@ header .nav-section {
   display: block;
   padding: 7px 0;
   margin: 0 10px;
-  color: #444;
+  color: var(---primary-color);
   text-decoration: underline transparent;
   transition: 0.3s ease-in-out;
 }
@@ -51,8 +56,7 @@ header .nav-section {
 }
 
 .hero-section {
-  margin: 0 auto;
-  margin-top: 70px;
+  margin: 70px auto 0 auto;
   font-family: 'Poppins', sans-serif;
   max-width: 800px;
   text-align: center;
@@ -62,18 +66,18 @@ header .nav-section {
 .hero-section h2 {
   padding-bottom: 20px;
   font-size: 2rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
 
 .hero-section h3 {
-  color: #444;
+  color: var(---primary-color);
 }
 
 .mobile-only {
   padding-top: 10px;
   display: block;
   font-size: 0.9rem;
-  color: #444;
+  color: var(---primary-color);
 }
 
 @media (min-width: 768px) {
@@ -93,9 +97,12 @@ main button {
   display: block;
   border-radius: 5px;
   min-width: 150px;
-  border: 2px solid currentColor;
   cursor: pointer;
   margin: 0 auto;
+  background: var(---button-color);
+  border: 2px solid var(---secondary-color);
+  color: inherit;
+  font-family: 'Poppins', sans-serif;
 }
 
 main .graph {
@@ -110,7 +117,7 @@ main .graph.init {
 
 .graph .description {
   font-weight: 600;
-  padding-bottom: 15px;
+  padding-bottom: 35px;
 }
 
 .graph ul {
@@ -120,14 +127,15 @@ main .graph.init {
 .graph li {
   position: relative;
   display: inline-block;
-  padding: 5px 10px;
-  border: 2px solid #000;
-  background-color: #cdcdcd;
-  border-radius: 5px;
+  padding: 15px 25px;
+  border: 2px solid var(---secondary-color);
+  background-color: var(---button-color);
+  border-radius: 8px;
   font-size: 0.9rem;
   cursor: pointer;
   margin: 10px 5px;
   user-select: none;
+  transition: color 0.2s ease-in-out;
 }
 
 .graph li::after {
@@ -136,7 +144,7 @@ main .graph.init {
   top: 100%;
   height: 0;
   width: 2px;
-  background-color: #000;
+  background-color: var(---secondary-color);
   left: 50%;
   transform: translateX(-50%);
   transition: 0.3s ease-in-out;
@@ -144,11 +152,13 @@ main .graph.init {
 
 .graph li.active::after {
   height: 45px;
-  background-color: var(---active-color);
+  background-color: var(---secondary-color);
 }
 
 .graph li.active {
-  border-color: var(---active-color);
+  border-color: var(---secondary-color);
+  background: var(---secondary-color);
+  color: #fff;
 }
 
 .graph.order .list-container {
@@ -189,14 +199,14 @@ main .graph.init {
   transform: translateY(-50%);
   border-width: 7px;
   border-style: solid;
-  border-color: transparent transparent transparent #000;
+  border-color: transparent transparent transparent var(---secondary-color);
 }
 
 .graph li.active::before {
   left: 50%;
   transform: translateX(-50%);
   top: calc(100% + 45px);
-  border-color: var(---active-color) transparent transparent transparent;
+  border-color: var(---secondary-color) transparent transparent transparent;
 }
 
 .graph.order li:last-child::after,
@@ -210,18 +220,22 @@ main .graph.init {
 }
 
 .graph li a {
-  color: #000;
+  color: var(---secondary-color);
   text-decoration: underline transparent;
   transition: 0.3s ease-in-out;
 }
 
 .graph li a:hover {
   text-decoration-color: currentColor;
+  color: var(---secondary-color)
+}
+
+.graph li.active:hover {
+  color: #fff;
 }
 
 .graph li.disable {
-  border-color: #656565;
-  background-color: #656565;
+  opacity: 0.5;
   pointer-events: none;
 }
 
@@ -279,5 +293,42 @@ main .graph.init {
 @media (min-width: 768px) {
   .mobile-only {
     display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    ---primary-color: #999;
+    ---secondary-color: #0070f3;
+    ---button-color: transparent;
+  }
+
+  body {
+    background: #000000;
+    color: #fff;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .graph li {
+    border: 1px solid var(---secondary-color);
+  }
+
+  .graph li.active {
+    background: var(---secondary-color);
+  }
+
+  .graph li.disable {
+    opacity: 0.3;
+  }
+
+  .graph .tooltip-content {
+    background: #444;
+  }
+
+  .graph .tooltip-content::after {
+    border-color: #444 transparent transparent transparent;
   }
 }
