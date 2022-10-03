@@ -2,17 +2,9 @@
 
 If you're seeing this, then you probably wanna contribute to this project. I say to you welcome.
 
-There are few rules:
+### Contributing resources
 
-1. Don't open the javascript file, is pretty messed up; you won't understand a thing. I don't even understand what I did :(
-
-2. No other rules.
-
-Your contribution is only needed in the resources folder which contains json files of webdev, and mobiledev.
-
-Each of them contains the roadmap of what to learn (ordered), and where to learn them, you can ask questions to get user's interest.
-
-The way it works is simple, but initially complicated. It works like a link list, each primary object holds a reference to the next primary object.
+The way it works is simple, but initially complicated. It works like a linked list, each primary object holds a reference to the next primary object.
 
 It is designed thus:
 
@@ -28,7 +20,7 @@ primary object
 |_ next
 ```
 
-The id of the options array in previous primary object is used as an identifier for a secondary object in the next primary object. Confusing?
+The `id` of the options array in previous primary object is used as an identifier for a secondary object in the next primary object. Confusing?
 
 For example
 
