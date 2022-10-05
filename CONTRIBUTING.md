@@ -1,8 +1,20 @@
-## Contributing Guidelines 🎉
+# Contributing Guidelines 🎉
 
 If you're seeing this, then you probably wanna contribute to this project. Thanks for your interest.
 
-### Contributing resources
+## Just a quick note
+
+1. Kindly make an issue before contributing
+2. Reference the issue in your pull request
+3. Please don't add resources that already exists
+4. Folk the repo before making your pull request with this repo
+
+## If you're new to contributing, [read this contributing guide for beginners 📌](https://github.com/firstcontributions/first-contributions)
+
+
+__IMPORTANT read this 👇__
+
+## How to contribute resources to devRoadMap
 
 The way it works is simple, but initially complicated. It works like a linked list, each primary object holds a reference to the next primary object.
 
