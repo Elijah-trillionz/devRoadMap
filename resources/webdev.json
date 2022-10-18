@@ -375,6 +375,18 @@
           "id": "nativejsondb",
           "more_info": "NativeJSONDB is a NOSQL database that stores data in JSON format. It is a good choice for storing data in a serverless environment. Still in development",
           "link": "https://twitter.com/json_db"
+        },
+        {
+          "title": "PostgreSQL",
+          "id": "postgresql",
+          "more_info": "PostgreSQL is a free and open-source relational database management system emphasizing extensibility and SQL compliance. Used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications.",
+          "link": "https://www.postgresql.org/docs/15/reference.html"
+        },
+        {
+          "title": "Redis",
+          "id": "redis",
+          "more_info": "Redis is an in-memory data structure store, used as a distributed, in-memory key–value database, cache and message broker, with optional durability. Redis supports different kinds of abstract data structures, such as strings, lists, maps, sets, sorted sets, bitmaps, streams, and spatial indices.",
+          "link": "https://redis.io/docs/"
         }
       ]
     }
