@@ -10,7 +10,13 @@ devRoadMap thrives with the help of the community that continually provides up-t
 - creating an issue to update any part of the website or 
 - creating an issue to give more resources
 
-Please do well to read the [contributing guideline](https://github.com/Elijah-trillionz/devRoadMap/blob/master/CONTRIBUTING.md) before contributing
+## Big thanks to these awesome contributors
+<a href="https://github.com/elijah-trillionz/devroadmap/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=elijah-trillionz/devroadmap" />
+</a>
+
+## Wanna join the list?
+Do well to read the [contributing guideline](https://github.com/Elijah-trillionz/devRoadMap/blob/master/CONTRIBUTING.md) to get started.
 
 
 <!--
