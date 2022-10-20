@@ -1,0 +1,25 @@
+{
+  "name": "devroadmap",
+  "version": "1.0.0",
+  "description": "a website that helps beginners choose a career path in development",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elijah-trillionz/devRoadMap.git"
+  },
+  "author": "Elijah Trillionz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Elijah-trillionz/devRoadMap/issues"
+  },
+  "homepage": "https://github.com/Elijah-trillionz/devRoadMap#readme"
+}
