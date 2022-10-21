@@ -24,6 +24,7 @@ const fetchData = async (id) => {
 };
 
 const toggleFurtherDisplay = (e) => {
+  const clickedElement = e.target.parentElement.parentElement.parentElement;
   e.target.parentElement.querySelectorAll('ul > li').forEach((option) => {
     // other options shouldn't disappear when in order
     if (option.id !== e.target.id) {
@@ -33,20 +34,23 @@ const toggleFurtherDisplay = (e) => {
   e.target.classList.toggle('active');
   if (e.target.classList.contains('active')) {
     // contains the parent and chosen id
-    createGraphElements(
-      devData.content[e.target.parentElement.parentElement.parentElement.id][
-        e.target.id
-      ]
-    );
+    createGraphElements(devData.content[clickedElement.id][e.target.id]);
     moveToBottom();
   } else {
-    removeNextOptions();
+    removeNextOptions(clickedElement);
   }
 };
 
-const removeNextOptions = () => {
+const removeNextOptions = (clickedElement) => {
   const graphElements = document.querySelectorAll('.graph');
-  graphElements[graphElements.length - 1].remove();
+  graphElements.forEach((el, index) => {
+    if (el.id === clickedElement.id) {
+      // create a loop from the current index number
+      for (let i = index + 1; i < graphElements.length; i++) {
+        graphElements[i].remove();
+      }
+    }
+  });
 };
 
 const createGraphElements = (data) => {
